@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Área do gestor · EcoRota</title>
+  <meta name="description" content="Painel do destino: capacidade de carga, horários de visita, cadastros e auditoria do Selo EcoRota.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" data-arte="mirante" data-semente="5">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><span>Área do gestor</span></nav>
+        <span class="sobretitulo entrar-1">Área do gestor</span>
+        <h1 class="entrar-2">Painel do destino</h1>
+        <p class="entrar-3">Capacidade de carga, horários de visita, cadastros e a auditoria do Selo EcoRota.</p>
+      </div>
+    </section>
+
+    <div class="container painel">
+      <nav class="painel-menu" id="menu-painel" aria-label="Seções do painel">
+        <button type="button" data-aba="visao" class="ativa"><span data-icone="painel"></span>Visão geral</button>
+        <button type="button" data-aba="selos"><span data-icone="selo"></span>Selo EcoRota<span class="contagem" id="c-selos" hidden></span></button>
+        <button type="button" data-aba="horarios"><span data-icone="calendario"></span>Capacidade e horários</button>
+        <button type="button" data-aba="cadastros"><span data-icone="mapa"></span>Destinos e atrativos</button>
+        <button type="button" data-aba="emissoes"><span data-icone="pegada"></span>Transporte e emissões</button>
+        <button type="button" data-aba="criterios"><span data-icone="documento"></span>Critérios do selo</button>
+      </nav>
+      <div id="painel-conteudo"><div class="linha-esqueleto"></div><div class="linha-esqueleto"></div></div>
+    </div>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/gestor.js"></script>
+</body>
+</html>

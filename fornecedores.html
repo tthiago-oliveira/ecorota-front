@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fornecedores · EcoRota</title>
+  <meta name="description" content="Hospedagens, agências, guias e transportes avaliados por viajantes. Quem tem o Selo EcoRota aparece primeiro.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" data-arte="floresta" data-semente="4">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><span>Fornecedores</span></nav>
+        <span class="sobretitulo entrar-1">Fornecedores</span>
+        <h1 class="entrar-2">Quem cuida da sua viagem</h1>
+        <p class="entrar-3">Hospedagens, agências, guias e transportes avaliados por quem já viajou.
+          Quem tem o Selo EcoRota e responde aos viajantes aparece primeiro.</p>
+      </div>
+    </section>
+
+    <section class="secao colada">
+      <div class="container">
+        <form class="barra-filtros" id="filtros" role="search">
+          <label class="campo largo">Buscar
+            <input id="busca" type="search" placeholder="Nome do fornecedor" autocomplete="off">
+          </label>
+          <label class="campo">Cidade
+            <select id="municipio"><option value="">Todas as cidades</option></select>
+          </label>
+          <label class="campo">Tipo
+            <select id="tipo"><option value="">Todos os tipos</option></select>
+          </label>
+          <label class="interruptor"><input type="checkbox" id="so-selo"> Só com Selo EcoRota</label>
+        </form>
+
+        <div class="resultado-info">
+          <span id="resumo"></span>
+          <div class="botoes-linha">
+            <button class="btn btn-mini btn-contorno" id="indicar" type="button"><span data-icone="mais"></span>Indicar um fornecedor</button>
+            <button class="btn btn-mini" id="cadastrar" type="button"><span data-icone="loja"></span>Cadastrar meu negócio</button>
+          </div>
+        </div>
+        <div class="grade-3" id="lista"></div>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro">
+      <div class="container">
+        <div class="titulo-secao centro" data-revelar>
+          <span class="sobretitulo">Como funciona o ranking</span>
+          <h2>A reputação é construída pelos viajantes</h2>
+          <p>Todo negócio de turismo pode ter um perfil aqui, mesmo antes de se cadastrar. O que coloca um fornecedor no topo é
+            a opinião de quem viajou e a prova de que ele cuida do lugar.</p>
+        </div>
+        <div class="passos">
+          <article class="passo" data-revelar>
+            <span class="icone-redondo"><span data-icone="conversa"></span></span>
+            <h3>Viajantes avaliam</h3>
+            <p>Nota de 1 a 5 e um comentário sobre as práticas sustentáveis: água, energia, lixo, comunidade.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo azul"><span data-icone="documento"></span></span>
+            <h3>O dono reivindica o perfil</h3>
+            <p>Com o CNPJ, o negócio assume o perfil sem custo e passa a responder às avaliações publicamente.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo ambar"><span data-icone="selo"></span></span>
+            <h3>Selo EcoRota</h3>
+            <p>Depois de uma auditoria critério por critério, com prova de cada prática, o fornecedor ganha o selo e sobe no ranking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/fornecedores.js"></script>
+</body>
+</html>

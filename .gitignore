@@ -1,0 +1,15 @@
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos temporários e backups locais
+*.txt
+*.zip
+*.log

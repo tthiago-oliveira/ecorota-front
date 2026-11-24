@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pegada de carbono · EcoRota</title>
+  <meta name="description" content="Calcule a pegada de carbono da sua viagem, trecho a trecho, e compare os meios de transporte.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" data-arte="trilha" data-semente="12">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><span>Pegada de carbono</span></nav>
+        <span class="sobretitulo entrar-1">Pegada de carbono</span>
+        <h1 class="entrar-2">Quanto CO₂ a sua viagem emite?</h1>
+        <p class="entrar-3">O transporte costuma ser a maior parte do impacto de uma viagem. Simule os trechos, registre a sua viagem
+          e veja onde dá para emitir menos.</p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container calc-pegada">
+        <div data-revelar>
+          <span class="sobretitulo">Simulador</span>
+          <h2>Compare os meios de transporte</h2>
+          <p class="suave">Escolha o transporte e a distância. O cálculo usa os fatores de emissão cadastrados na EcoRota, em kg de CO₂
+            equivalente por quilômetro, com o ano e a fonte de cada um.</p>
+          <ul class="criterios regras">
+            <li><span data-icone="check"></span><span>Emissão do trecho = distância × fator de emissão do transporte.</span></li>
+            <li><span data-icone="check"></span><span>A pegada da viagem é a soma de todos os trechos.</span></li>
+          </ul>
+        </div>
+        <div class="calc-caixa" id="calculadora" data-revelar></div>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro" id="viagens">
+      <div class="container">
+        <div class="linha-titulo">
+          <div class="titulo-secao" data-revelar>
+            <span class="sobretitulo">Minhas viagens</span>
+            <h2>Registre os trechos e acompanhe a pegada</h2>
+            <p>Cada trecho adicionado recalcula a pegada da viagem na hora.</p>
+          </div>
+          <button class="btn" id="nova-viagem" type="button"><span data-icone="mais"></span>Nova viagem</button>
+        </div>
+        <div id="area-viagens"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/pegada.js"></script>
+</body>
+</html>

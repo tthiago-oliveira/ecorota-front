@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Destinos · EcoRota</title>
+  <meta name="description" content="Destinos de natureza com regras claras de visitação: veja os atrativos de cada região e reserve dentro da cota.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" data-arte="chapada" data-semente="3">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><span>Destinos</span></nav>
+        <span class="sobretitulo entrar-1">Destinos</span>
+        <h1 class="entrar-2">Para onde vamos?</h1>
+        <p class="entrar-3">Regiões de natureza preservada, com atrativos que têm limite de visitantes por horário.
+          Escolha um destino e veja o que fazer por lá.</p>
+      </div>
+    </section>
+
+    <section class="secao colada">
+      <div class="container">
+        <form class="barra-filtros" id="filtros" role="search">
+          <label class="campo largo">Buscar
+            <input id="busca" type="search" placeholder="Nome do destino ou da cidade" autocomplete="off">
+          </label>
+          <label class="campo">Estado
+            <select id="uf"><option value="">Todos os estados</option></select>
+          </label>
+          <label class="campo">Tipo
+            <select id="tipo"><option value="">Todos os tipos</option></select>
+          </label>
+        </form>
+
+        <div class="resultado-info"><span id="resumo"></span></div>
+        <div class="grade-3" id="lista"></div>
+      </div>
+    </section>
+
+    <section class="secao compacta fundo-claro">
+      <div class="container">
+        <div class="passos">
+          <article class="passo" data-revelar>
+            <span class="icone-redondo"><span data-icone="pessoas"></span></span>
+            <h3>Visitação com limite</h3>
+            <p>Cada atrativo tem uma cota de pessoas por dia e por horário, definida pela capacidade de carga do lugar.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo azul"><span data-icone="selo"></span></span>
+            <h3>Fornecedores conferidos</h3>
+            <p>Hospedagens, guias e agências da região mostram o Selo EcoRota quando passam na auditoria.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo ambar"><span data-icone="pegada"></span></span>
+            <h3>Impacto medido</h3>
+            <p>Na hora de planejar, veja quanto CO₂ cada trecho da viagem emite e escolha o transporte com menos impacto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/destinos.js"></script>
+</body>
+</html>

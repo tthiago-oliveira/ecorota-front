@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fornecedor · EcoRota</title>
+  <meta name="description" content="Perfil do fornecedor: Selo EcoRota, avaliações de viajantes e respostas do negócio.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" id="cabecalho">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em">
+          <a href="index.html">Início</a><span>/</span><a href="fornecedores.html">Fornecedores</a><span>/</span><span id="trilha-nome">…</span>
+        </nav>
+        <div class="cabecalho-fornecedor entrar-2">
+          <span class="icone-tipo grande" id="icone"></span>
+          <div>
+            <span class="sobretitulo" id="tipo-local">Fornecedor</span>
+            <h1 id="nome">Carregando…</h1>
+            <div class="marcas" id="marcas"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div id="erro-pagina"></div>
+      <div class="layout-detalhe" id="layout" hidden>
+        <div>
+          <div id="aviso-perfil"></div>
+
+          <section class="cartao" data-revelar>
+            <h3>Avaliações dos viajantes</h3>
+            <div class="resumo-notas" id="resumo"></div>
+            <div id="avaliacoes"></div>
+          </section>
+
+          <section class="cartao" id="bloco-avaliar" data-revelar>
+            <h3>Avalie este fornecedor</h3>
+            <p class="suave pequeno">Conte o que você viu das práticas sustentáveis: água, energia, lixo, respeito à natureza e à comunidade.</p>
+            <form class="form" id="f-avaliar">
+              <fieldset class="escolha-nota" aria-label="Nota de 1 a 5">
+                <input type="radio" name="nota" value="5" id="n5"><label for="n5" title="5 estrelas"><span data-icone="estrela"></span></label>
+                <input type="radio" name="nota" value="4" id="n4"><label for="n4" title="4 estrelas"><span data-icone="estrela"></span></label>
+                <input type="radio" name="nota" value="3" id="n3"><label for="n3" title="3 estrelas"><span data-icone="estrela"></span></label>
+                <input type="radio" name="nota" value="2" id="n2"><label for="n2" title="2 estrelas"><span data-icone="estrela"></span></label>
+                <input type="radio" name="nota" value="1" id="n1"><label for="n1" title="1 estrela"><span data-icone="estrela"></span></label>
+              </fieldset>
+              <label class="campo">Comentário
+                <textarea name="comentario" required maxlength="1000" placeholder="Ex.: separam o lixo, usam energia solar, contratam guias da região…"></textarea>
+              </label>
+              <div><button class="btn" type="submit"><span data-icone="conversa"></span>Publicar avaliação</button></div>
+            </form>
+          </section>
+        </div>
+
+        <aside class="coluna-lateral">
+          <section class="cartao" id="bloco-selo" data-revelar></section>
+          <section class="cartao" id="bloco-dono" data-revelar></section>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/fornecedor.js"></script>
+</body>
+</html>

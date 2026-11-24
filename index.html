@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EcoRota · Turismo sustentável</title>
+  <meta name="description" content="Reserve atrativos com vagas controladas, escolha fornecedores com o Selo EcoRota e calcule a pegada de carbono da sua viagem.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <!-- capa com a paisagem ilustrada -->
+    <section class="capa" id="capa">
+      <div class="container">
+        <div class="capa-texto">
+          <span class="sobretitulo entrar-1">Turismo sustentável no Brasil</span>
+          <h1 class="entrar-2">Viaje para lugares incríveis e <em>ajude a mantê-los assim</em>.</h1>
+          <p class="lead entrar-3">Reserve atrativos com vagas controladas, escolha fornecedores com o Selo EcoRota
+            e descubra a pegada de carbono da sua viagem.</p>
+          <form class="busca-capa entrar-4" action="atrativos.html">
+            <label><span data-icone="busca"></span><span class="sr">Buscar</span>
+              <input name="busca" placeholder="Para onde você quer ir? Ex.: gruta, praia" autocomplete="off"></label>
+            <button class="btn" type="submit">Explorar</button>
+          </form>
+          <div class="sugestoes entrar-4" id="sugestoes"></div>
+        </div>
+      </div>
+      <span class="rolar-dica" aria-hidden="true"></span>
+    </section>
+
+    <!-- números lidos no banco -->
+    <section class="numeros-faixa">
+      <div class="container">
+        <div class="numeros-grade" id="numeros" data-revelar>
+          <div class="numero-item"><strong data-contar="0" id="n-destinos">0</strong><span>destinos</span></div>
+          <div class="numero-item"><strong data-contar="0" id="n-atrativos">0</strong><span>atrativos para visitar</span></div>
+          <div class="numero-item"><strong data-contar="0" id="n-fornecedores">0</strong><span>fornecedores avaliados</span></div>
+          <div class="numero-item"><strong data-contar="0" id="n-vagas">0</strong><span>vagas abertas nesta semana</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="aviso-banco"></div>
+
+    <section class="secao">
+      <div class="container">
+        <div class="linha-titulo">
+          <div class="titulo-secao" data-revelar>
+            <span class="sobretitulo">Destinos em destaque</span>
+            <h2>Natureza que vale a viagem</h2>
+            <p>Lugares com regras claras de visitação, para que continuem lindos para quem vem depois.</p>
+          </div>
+          <a class="link-seta" href="destinos.html" data-revelar>Ver todos os destinos <span data-icone="seta"></span></a>
+        </div>
+        <div class="grade-3" id="destinos"></div>
+      </div>
+    </section>
+
+    <section class="secao fundo-claro">
+      <div class="container">
+        <div class="titulo-secao centro" data-revelar>
+          <span class="sobretitulo">Como funciona</span>
+          <h2>Três passos para uma viagem de baixo impacto</h2>
+          <p>Do planejamento à volta para casa, o EcoRota ajuda você a escolher bem.</p>
+        </div>
+        <div class="passos">
+          <article class="passo" data-revelar>
+            <span class="icone-redondo"><span data-icone="mapa"></span></span>
+            <h3>Escolha o destino</h3>
+            <p>Veja os atrativos de cada destino, o valor do ingresso e se a visita exige guia credenciado.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo azul"><span data-icone="ingresso"></span></span>
+            <h3>Reserve dentro da cota</h3>
+            <p>Cada horário tem um limite de visitantes. Quando ele acaba, a reserva fecha, e o lugar não fica lotado.</p>
+          </article>
+          <article class="passo" data-revelar>
+            <span class="icone-redondo ambar"><span data-icone="pegada"></span></span>
+            <h3>Viaje e meça sua pegada</h3>
+            <p>Registre os trechos da viagem e veja quanto CO₂ cada um emite, para escolher o transporte com menos impacto.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="linha-titulo">
+          <div class="titulo-secao" data-revelar>
+            <span class="sobretitulo">Para visitar</span>
+            <h2>Atrativos com vagas abertas</h2>
+            <p>Grutas, rios de água cristalina, praias e trilhas, com horários e vagas atualizados.</p>
+          </div>
+          <a class="link-seta" href="atrativos.html" data-revelar>Ver todos os atrativos <span data-icone="seta"></span></a>
+        </div>
+        <div class="grade-3" id="atrativos"></div>
+      </div>
+    </section>
+
+    <section class="secao compacta">
+      <div class="container">
+        <div class="faixa-selo" data-revelar>
+          <div>
+            <span class="sobretitulo">Selo EcoRota</span>
+            <h2>Sustentabilidade que dá para conferir</h2>
+            <p>O selo só é concedido depois de uma auditoria critério por critério, com a prova de cada prática.
+              Fornecedores com o selo aparecem primeiro na busca.</p>
+            <ul class="lista-check" id="selo-pontos"></ul>
+            <a class="btn btn-lima" href="fornecedores.html?selo=1">Ver fornecedores com o selo <span data-icone="seta"></span></a>
+          </div>
+          <div class="mini-fornecedores" id="mini-fornecedores"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container calc-pegada">
+        <div data-revelar>
+          <span class="sobretitulo">Pegada de carbono</span>
+          <h2>Quanto CO₂ a sua viagem emite?</h2>
+          <p class="suave">Escolha o meio de transporte e a distância. O cálculo usa os fatores de emissão cadastrados
+            no EcoRota, com o ano e a fonte de cada um.</p>
+          <a class="btn" href="pegada.html">Planejar minha viagem <span data-icone="seta"></span></a>
+        </div>
+        <div class="calc-caixa" id="calculadora" data-revelar></div>
+      </div>
+    </section>
+
+    <section class="secao compacta">
+      <div class="container">
+        <div class="chamada" id="chamada" data-revelar>
+          <h2>Pronto para viajar melhor?</h2>
+          <p>Encontre o seu próximo destino e garanta a vaga no horário que preferir.</p>
+          <div class="botoes">
+            <a class="btn btn-lima" href="atrativos.html">Explorar atrativos</a>
+            <a class="btn btn-claro" href="sobre.html">Conhecer a EcoRota</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

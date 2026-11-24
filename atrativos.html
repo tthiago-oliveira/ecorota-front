@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atrativos · EcoRota</title>
+  <meta name="description" content="Grutas, rios, praias e trilhas com horários e vagas atualizados. Reserve dentro da capacidade de cada lugar.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="cabecalho-pagina" data-arte="rio" data-semente="5">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em"><a href="index.html">Início</a><span>/</span><span>Atrativos</span></nav>
+        <span class="sobretitulo entrar-1">Atrativos</span>
+        <h1 class="entrar-2" id="titulo">O que fazer</h1>
+        <p class="entrar-3" id="subtitulo">Grutas, rios de água cristalina, praias e trilhas. Cada horário tem um número
+          limitado de vagas, para o lugar nunca ficar lotado.</p>
+      </div>
+    </section>
+
+    <section class="secao colada">
+      <div class="container">
+        <form class="barra-filtros" id="filtros" role="search">
+          <label class="campo largo">Buscar
+            <input id="busca" name="busca" type="search" placeholder="Ex.: gruta, praia, trilha" autocomplete="off">
+          </label>
+          <label class="campo">Destino
+            <select id="destino"><option value="">Todos os destinos</option></select>
+          </label>
+          <label class="campo">Tipo
+            <select id="tipo"><option value="">Todos os tipos</option></select>
+          </label>
+          <label class="campo">Ordenar por
+            <select id="ordem">
+              <option value="vaga">Próxima vaga</option>
+              <option value="preco">Menor preço</option>
+              <option value="nome">Nome</option>
+            </select>
+          </label>
+          <label class="interruptor"><input type="checkbox" id="gratis"> Só gratuitos</label>
+        </form>
+
+        <div class="resultado-info">
+          <span id="resumo"></span>
+          <button class="btn btn-mini btn-contorno" id="limpar" type="button" hidden>Limpar filtros</button>
+        </div>
+        <div class="grade-3" id="lista"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/demo.js"></script>
+  <script src="js/atrativos.js"></script>
+</body>
+</html>

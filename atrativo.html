@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atrativo · EcoRota</title>
+  <meta name="description" content="Horários, vagas e reserva do atrativo, dentro da capacidade de carga do lugar.">
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/fontes.css">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header id="topo"></header>
+
+  <main>
+    <section class="banner-atrativo" id="banner">
+      <div class="container">
+        <nav class="trilha-nav" aria-label="Você está em">
+          <a href="index.html">Início</a><span>/</span><a href="atrativos.html">Atrativos</a><span>/</span><span id="trilha-nome">…</span>
+        </nav>
+        <div class="etiquetas entrar-1" id="etiquetas"></div>
+        <h1 class="entrar-2" id="nome">Carregando…</h1>
+        <p class="local entrar-3" id="local"></p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div id="erro-pagina"></div>
+      <div class="layout-detalhe" id="layout" hidden>
+        <div>
+          <section data-revelar>
+            <span class="sobretitulo">Sobre a visita</span>
+            <h2 id="titulo-sobre">Como é a visita</h2>
+            <p class="lead suave" id="descricao"></p>
+            <div class="infos" id="infos"></div>
+          </section>
+
+          <section class="cartao" data-revelar>
+            <h3>Capacidade de carga</h3>
+            <p class="suave pequeno">O limite de visitantes que o lugar aguenta sem se degradar. Quando as vagas de um horário acabam, a reserva fecha.</p>
+            <div class="capacidade">
+              <div class="medidor" id="medidor">
+                <svg viewBox="0 0 120 120" aria-hidden="true">
+                  <circle class="fundo" cx="60" cy="60" r="52" fill="none" stroke-width="12"/>
+                  <circle class="valor-arco" cx="60" cy="60" r="52" fill="none" stroke-width="12" stroke-dasharray="326.7" stroke-dashoffset="326.7"/>
+                </svg>
+                <div class="centro"><div><strong id="pct">0%</strong><span>ocupado</span></div></div>
+              </div>
+              <div id="texto-capacidade"></div>
+            </div>
+          </section>
+
+          <section class="cartao" data-revelar>
+            <h3>Boas práticas na visita</h3>
+            <ul class="criterios">
+              <li><span data-icone="check"></span>Chegue no horário reservado: o próximo grupo já tem as vagas dele.</li>
+              <li><span data-icone="check"></span>Use protetor solar biodegradável antes de entrar na água.</li>
+              <li><span data-icone="check"></span>Leve o seu lixo de volta e não alimente os animais.</li>
+              <li><span data-icone="check"></span>Siga as trilhas sinalizadas e as orientações do guia.</li>
+            </ul>
+          </section>
+
+          <section class="mais-destino" id="bloco-destino" hidden>
+            <div class="linha-titulo">
+              <div class="titulo-secao"><span class="sobretitulo">No mesmo destino</span><h2 id="titulo-destino">Mais para fazer</h2></div>
+              <a class="link-seta" id="link-destino" href="atrativos.html">Ver todos <span data-icone="seta"></span></a>
+            </div>
+            <div class="grade-2" id="mesmo-destino"></div>
+          </section>
+        </div>
+
+        <aside class="reserva-card" id="reserva" aria-label="Reserva"></aside>
+      </div>
+    </div>
+  </main>
+
+  <footer id="rodape" class="rodape"></footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/arte.js"></script>
+  <script src="js/componentes.js"></script>
+  <script src="js/atrativo.js"></script>
+</body>
+</html>
