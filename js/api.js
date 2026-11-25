@@ -6,7 +6,7 @@
 // Endereço da API. Se ela rodar em outra porta ou outro computador, troque só esta linha.
 const API_URL = (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.protocol === "file:")
      ? "http://localhost:8080/api"
-     : "https://ecorota-api.onrender.com";
+     : "https://ecorota-api.onrender.com/api";
 
 // Erro devolvido pela API: guarda o status HTTP e, quando houver, o erro de cada campo
 class ErroApi extends Error {
